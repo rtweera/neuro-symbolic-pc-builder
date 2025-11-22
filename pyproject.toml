@@ -1,0 +1,17 @@
+[project]
+name = "neuro-symbolic-pc-builder"
+version = "0.1.0"
+description = "Expert pc builder using Small Language Models as the neuro part and Expert System as the symbolic part"
+authors = [
+    {name = "Ravindu Weerasinghe",email = "ravindutharuka2001@gmail.com"}
+]
+license = {text = "GPL 3.0"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
