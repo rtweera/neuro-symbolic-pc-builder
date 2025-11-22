@@ -7,9 +7,10 @@ authors = [
 ]
 license = {text = "GPL 3.0"}
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.13, <4.0.0"
 dependencies = [
-    "janus-swi (>=1.5.2,<2.0.0)"
+    "janus-swi (>=1.5.2,<2.0.0)",
+    "langchain (>=1.0.8,<2.0.0)"
 ]
 
 
