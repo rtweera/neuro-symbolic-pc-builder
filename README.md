@@ -62,6 +62,14 @@ To verify that the Janus-Prolog integration is functioning correctly, follow the
     Found Build: CPU=ryzen_7800x3d, Mobo=b650_tomahawk, Total=$650
     ```
 
+## Agent Usage
+
+Run the following command from root directory to test the agent functionality:
+
+  ```bash
+  poetry run python -m src.agents.agent
+  ```
+
 ## Troubleshooting
 
 - `SWI-Prolog: [FATAL ERROR: at Sun Nov 23 03:31:34 2025 Could not find system resources]`  
