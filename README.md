@@ -2,6 +2,24 @@
 
 Expert pc builder using Small Language Models as the neuro part and Expert System as the symbolic part
 
+## Architecture Overview
+
+The architecture of the neuro-symbolic PC builder consists of following components:
+
+1. **Neuro Component**: This component utilizes Small Language Models (SLMs) to interpret user requirements and preferences for building a PC. The SLM processes natural language inputs and extracts relevant information such as budget, performance needs, and specific hardware preferences to formulate queries for the symbolic component.
+
+2. **Symbolic Component**: This component is an Expert System that uses a Prolog-based knowledge base to reason about PC components and configurations. It applies logical rules and constraints to generate optimal PC build recommendations based on the inputs provided by the neuro component.
+
+3. **Knowledge Base**: The knowledge base contains detailed information about various PC components, including specifications, compatibility rules, and pricing. This data is structured in a way that allows the symbolic component to efficiently query and reason about possible configurations.
+
+4. **Data Ingestion Component**: This component is responsible for collecting and updating the knowledge base with the latest information about PC components. It may scrape data from online retailers, manufacturers, and review sites to ensure that the knowledge base remains current and accurate.
+
+5. **Logging and Monitoring Component**: This component tracks the system's performance, logs user interactions, and monitors the health of the neuro and symbolic components to ensure reliability and facilitate debugging.
+
+## Architecture Diagram
+
+![Architecture Diagram](resources/images/architecture.png)
+
 ## Setup Instructions
 
 1. **Install poetry**: If you don't have Poetry installed, you can do so by following the instructions at [https://python-poetry.org/docs/#installation](https://python-poetry.org/docs/#installation).
