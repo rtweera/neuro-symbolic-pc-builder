@@ -23,3 +23,17 @@ def get_pc_recommendations(budget: int) -> str:
         response_lines.append(line)
     
     return "\n".join(response_lines)
+
+@tool
+def use_internal_knowledge(input_text: str) -> str:
+    """
+    Use this tool for general questions about PC building, hardware specs,
+    or related topics that do not require querying the Expert System.
+    Input should be a string containing the user's question.
+    Returns instructions to the LLM to answer based on its internal knowledge.
+    """
+    return (
+        "Please answer the following question using your internal knowledge "
+        "about PC building and hardware specifications:\n\n"
+        f"Question: {input_text}"
+    )
