@@ -20,6 +20,17 @@ The architecture of the neuro-symbolic PC builder consists of following componen
 
 ![Architecture Diagram](resources/images/architecture.png)
 
+## Technologies Used
+
+- **Python**: The primary programming language used for implementing the neuro and symbolic components.
+- **SWI-Prolog**: The Prolog environment used for the symbolic reasoning and knowledge base management.
+- **Janus-SWI**: A Python library that facilitates integration between Python and SWI-Prolog, allowing seamless communication between the neuro and symbolic components.
+- **Poetry**: A dependency management and packaging tool for Python projects, used to manage project dependencies and virtual environments.
+- **Ollama**: A platform for running Small Language Models locally, used to host the SLMs for the neuro component.
+- **LangChain**: A framework for building applications with language models, used to implement the neuro component.
+- **LangChain-Ollama**: An integration of LangChain with Ollama models, used to enhance the capabilities of the neuro component.
+- **Chainlit**: A framework for building conversational AI applications, used to create the user interface for interacting with the PC builder.
+
 ## Setup Instructions
 
 1. **Install poetry**: If you don't have Poetry installed, you can do so by following the instructions at [https://python-poetry.org/docs/#installation](https://python-poetry.org/docs/#installation).
