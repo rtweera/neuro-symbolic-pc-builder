@@ -196,10 +196,10 @@ for m in messages["messages"]:
 import os
 import re
 
-jsonl_files = [f for f in os.listdir(".") if re.match(r"^\d*messages\.jsonl$", f)]
+jsonl_files = [f for f in os.listdir("./messages") if re.match(r"^\d*messages\.jsonl$", f)]
 prefixes = [int(re.match(r"^(\d*)messages\.jsonl$", f).group(1) or 0) for f in jsonl_files] # type: ignore
 new_prefix = max(prefixes) + 1 if prefixes else 0
-new_filename = f"{new_prefix}messages.jsonl"
+new_filename = f"./messages/{new_prefix}messages.jsonl"
 
 with open(new_filename, "w", encoding="utf-8") as f:
     for m in messages["messages"]:
